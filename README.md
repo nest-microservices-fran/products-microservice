@@ -16,7 +16,13 @@ npm install
 npx prisma migrate dev
 ```
 
-5. Ejecutar
+5. Levantar servidor de nats
+
+```
+docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
+```
+
+6. Ejecutar
 
 ```
 npm run start:dev
